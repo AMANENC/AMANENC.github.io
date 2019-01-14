@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AMAN ENGINEERING CONTRACTORS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body 
+{
+font-family: "Allerta Stencil", Sans-serif;
+}
+.mySlides {display: none}
+
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="C:\Users\LENOVO\Desktop\sem 8\aman\index.html" class="w3-bar-item w3-button w3-padding-large"><img src="C:\Users\LENOVO\Desktop\sem 8\arman\logo.jpeg"></a>
+    <a href="C:\Users\LENOVO\Desktop\sem 8\aman\project.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="margin-top:15px">PROJECTS</a>
+    <a href="C:\Users\LENOVO\Desktop\sem 8\aman\services.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="margin-top:15px">SERVICES</a>
+    <a href="C:\Users\LENOVO\Desktop\sem 8\aman\contactus.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="margin-top:15px">CONTACT</a>
+   </div>   
+</div>
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="C:\Users\LENOVO\Desktop\sem 8\aman\project.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+  <a href="C:\Users\LENOVO\Desktop\sem 8\aman\services.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SERVICES</a>
+  <a href="C:\Users\LENOVO\Desktop\sem 8\aman\contactus.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:50px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container">
+    <img class="img-responsive" src="C:\Users\LENOVO\Desktop\sem 8\arman\brand1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-allerta w3-container  w3-padding-32 w3-hide-small">
+     <center> <h2 class="w3-xlarge">BPCL</h2>
+      <p><b>Details regarding bpcl</b></p>  </center> 
+    </div>
+  </div>
+  <div class="mySlides w3-display-container ">
+    <img src="C:\Users\LENOVO\Desktop\sem 8\arman\brand2.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-opacity w3-padding-32 w3-hide-small">
+      <center> <h2>IOCL</h2>
+      <p><b>Details regarding IOCL</b></p>    </center>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container ">
+    <img src="C:\Users\LENOVO\Desktop\sem 8\arman\brand3.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-opacity w3-padding-32 w3-hide-small">
+     <center> <h2>Madhugiri</h2>
+      <p><b>Details regarding Madhugiri</b></p>  </center>  
+    </div>
+  </div>
+  <!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<br><br><br><br><br><br><img src="C:\Users\LENOVO\Desktop\sem 8\aman\location.png" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
